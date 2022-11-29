@@ -9,6 +9,7 @@ import { ViewUserinfoComponent } from './view-userinfo/view-userinfo.component';
 import { ViewProductComponent } from './view-product/view-product.component';
 import { ViewUserdataComponent } from './view-userdata/view-userdata.component';
 import { ViewTodoComponent } from './view-todo/view-todo.component';
+import { ViewQuotesappComponent } from './view-quotesapp/view-quotesapp.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ViewTodoComponent } from './view-todo/view-todo.component';
     ViewUserinfoComponent,
     ViewProductComponent,
     ViewUserdataComponent,
-    ViewTodoComponent
+    ViewTodoComponent,
+    ViewQuotesappComponent
   ],
   imports: [
     BrowserModule,
