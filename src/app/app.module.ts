@@ -11,6 +11,42 @@ import { ViewUserdataComponent } from './view-userdata/view-userdata.component';
 import { ViewTodoComponent } from './view-todo/view-todo.component';
 import { ViewQuotesappComponent } from './view-quotesapp/view-quotesapp.component';
 import { HttpClientModule } from '@angular/common/http'
+import { RouterModule, Routes } from '@angular/router';
+
+
+const myRoute:Routes=[
+  {
+    path:"",
+    component:ViewPassengerComponent
+  },
+  {
+    path:"publicdata",
+    component:ViewPublicdataComponent
+  },
+  {
+    path:"userinfo",
+    component:ViewUserinfoComponent
+  },
+  {
+    path:"product",
+    component:ViewProductComponent
+  },
+  {
+    path:"userdata",
+    component:ViewUserdataComponent
+  },
+  {
+    path:"todo",
+    component:ViewTodoComponent
+  },
+  {
+    path:"quotes",
+    component:ViewQuotesappComponent
+  }
+  
+
+]
+
 
 @NgModule({
   declarations: [
@@ -26,7 +62,8 @@ import { HttpClientModule } from '@angular/common/http'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(myRoute)
     
   ],
   providers: [],
