@@ -12,6 +12,7 @@ import { ViewTodoComponent } from './view-todo/view-todo.component';
 import { ViewQuotesappComponent } from './view-quotesapp/view-quotesapp.component';
 import { HttpClientModule } from '@angular/common/http'
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 const myRoute:Routes=[
@@ -57,7 +58,8 @@ const myRoute:Routes=[
     ViewProductComponent,
     ViewUserdataComponent,
     ViewTodoComponent,
-    ViewQuotesappComponent
+    ViewQuotesappComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
